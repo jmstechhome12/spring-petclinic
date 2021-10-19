@@ -121,7 +121,7 @@ public class OwnerControllerTests {
             .andExpect(model().attribute("owner", hasProperty("firstName", is("George"))))
             .andExpect(model().attribute("owner", hasProperty("address", is("110 W. Liberty St."))))
             .andExpect(model().attribute("owner", hasProperty("city", is("Madison"))))
-            .andExpect(model().attribute("owner", hasProperty("telephone", is("6085551023"))))
+            .andExpect(model().attribute("owner", hasProperty("telephone", is("6085551023dfasf42424"))))
             .andExpect(view().name("owners/createOrUpdateOwnerForm"));
     }
 
@@ -160,7 +160,7 @@ public class OwnerControllerTests {
             .andExpect(model().attribute("owner", hasProperty("firstName", is("George"))))
             .andExpect(model().attribute("owner", hasProperty("address", is("110 W. Liberty St."))))
             .andExpect(model().attribute("owner", hasProperty("city", is("Madison"))))
-            .andExpect(model().attribute("owner", hasProperty("telephone", is("6085551023"))))
+            .andExpect(model().attribute("owner", hasProperty("telephone", is("6085551023sdfasf124214"))))
             .andExpect(view().name("owners/ownerDetails"));
     }
 
